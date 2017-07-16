@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <!--This is the header; the first line styles the page using the css page it links to. 
+    The second line gives the page a title when someone hovers over the tab. 
+    The third line gives the page the tab logo.
+    -->
+    <link rel="stylesheet" type="text/css" href="css/index_style-1.css">
+    <title>UMBC CS Advising</title>
+    <link rel="icon" href="http://styleguide.umbc.edu/files/2014/05/UMBCretrievers_LOGO.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+    
+    <!--  This table holds the two pictures at the top of the page and the Header. Its done this way so everything stays in place relative to each other -->
+
+    <table>
+        <tr>
+            <td width="150px"><img src="http://styleguide.umbc.edu/files/2014/05/UMBCretrievers_LOGO.jpg" /></td>
+            <td ><h2>UMBC Computer Science Advising</h2></td>
+            <td width="150px"><img src="http://styleguide.umbc.edu/files/2014/05/UMBCretrievers_LOGO.jpg" /></td>
+        </tr>
+    </table>
+
+
+    <!--The second header telling students what to do-->
+    <h1>Select all the classes you took or you are taking.</h1>
+    <center>
+
+        <!--The form with the classes, posts the information to php when submit is clicked-->
+        <form action="processSelectedClasses.php" name ="classes[]" method="post">
+    
+
+            <label>
+                <input type="checkbox" name="classes[]" value="cmsc201">CMSC 201 <br>
+                <input type="checkbox" name="classes[]" value="cmsc202">CMSC 202 <br>
+                <input type="checkbox" name="classes[]" value="cmsc203">CMSC 203 <br>
+                <input type="checkbox" name="classes[]" value="cmsc232">CMSC 232 <br>
+                <input type="checkbox" name="classes[]" value="cmsc291">CMSC 291 <br>
+                <input type="checkbox" name="classes[]" value="cmsc299">CMSC 299 <br>
+                <input type="checkbox" name="classes[]" value="cmsc304">CMSC 304 <br>
+                <input type="checkbox" name="classes[]" value="cmsc313">CMSC 313 <br>
+                <input type="checkbox" name="classes[]" value="cmsc331">CMSC 331 <br>
+                <input type="checkbox" name="classes[]" value="cmsc341">CMSC 341 <br>
+                <input type="checkbox" name="classes[]" value="cmsc352">CMSC 352 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value="cmsc391">CMSC 391 <br>
+                <input type="checkbox" name="classes[]" value="cmsc232">CMSC 232 <br>
+                <input type="checkbox" name="classes[]" value="cmsc232">CMSC 232 <br>
+                <input type="checkbox" name="classes[]" value="cmsc232">CMSC 232 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc404”>CMSC 404 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc411”>CMSC 411 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc421”>CMSC 421 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc426”>CMSC 426 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc427”>CMSC 427 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc431”>CMSC 431 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc432”>CMSC 432 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value=”cmsc433”>CMSC 433 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc435”>CMSC 435 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc436”>CMSC 436 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc437”>CMSC 437 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc441”>CMSC 441 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc442”>CMSC 442 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc443”>CMSC 443 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc444”>CMSC 444 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc446”>CMSC 446 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc447”>CMSC 447 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc448”>CMSC 448 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value=”cmsc451”>CMSC 451 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc452”>CMSC 452 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc453”>CMSC 453 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc455”>CMSC 455 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc456”>CMSC 456 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc457”>CMSC 457 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc461”>CMSC 461 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc465”>CMSC 465 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc466”>CMSC 466 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc471”>CMSC 471 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc473”>CMSC 473 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value=”cmsc475”>CMSC 475 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc476”>CMSC 476 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc477”>CMSC 477 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc478”>CMSC 478 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc479”>CMSC 479 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc481”>CMSC 481 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc483”>CMSC 483 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc484”>CMSC 484 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc486”>CMSC 486 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc487”>CMSC 487 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc491”>CMSC 491 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value=”cmsc493”>CMSC 493 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc495”>CMSC 495 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc498”>CMSC 498 <br>
+                <input type="checkbox" name="classes[]" value=”cmsc499”>CMSC 499 <br>
+                <input type="checkbox" name="classes[]" value="math151">Math 151 <br>
+                <input type="checkbox" name="classes[]" value="math152">MATH 152 <br>
+                <input type="checkbox" name="classes[]" value="math221">MATH 221 <br>
+                <input type="checkbox" name="classes[]" value="chem101">CHEM 101 <br>
+
+                <input type="checkbox" name="classes[]" value="chem102">CHEM 102 <br>
+                <input type="checkbox" name="classes[]" value="chem102L">CHEM 102L <br>
+                <input type="checkbox" name="classes[]" value="biol141">BIOL 141 <br>
+            </label>
+            <label>
+                <input type="checkbox" name="classes[]" value="biol142">BIOL 142 <br>
+                <input type="checkbox" name="classes[]" value="biollab">BIOL Lab <br>
+                <input type="checkbox" name="classes[]" value="phys121">PHYS 121 <br>
+                <input type="checkbox" name="classes[]" value="phys122">PHYS 122 <br>
+                <input type="checkbox" name="classes[]" value="phys122L">PHYS 122L <br>
+                <input type="checkbox" name="classes[]" value="ges110">GES 110 <br>
+                <input type="checkbox" name="classes[]" value="ges120">GES 120 <br>
+                <input type="checkbox" name="classes[]" value="ges286">GES 286 <br>
+                <input type="checkbox" name="classes[]" value="sci100">SCI 100 <br>
+
+            </label>
+
+
+
+          
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <input type="submit" name ="submit" value="Get Available Classes">
+
+        </form>
+    </center>
+       
+</body>
+</html>
